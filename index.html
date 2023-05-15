@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- <meta property="og:title" content="The title of the sharing preview" />
+<meta property="og:description" content="The first few lines of content below the title" /> -->
+<meta property="og:image" content="asset/css/inspinia/img/landing.jpg" />
+
+    <title>E-vacuate</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="asset/css/inspinia/image/pnpa_icon.ico" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="asset/css/inspinia/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="asset/css/inspinia/css/animate.css" rel="stylesheet">
+    <link href="asset/css/inspinia/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="asset/css/inspinia/css/style.css" rel="stylesheet">
+
+    <link href="asset/css/inspinia/css/plugins/textSpinners/spinners.css" rel="stylesheet">
+    <link href="asset/css/inspinia/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="asset/css/inspinia/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .b-w{
+            width: 250px !important;
+        }
+    </style>
+</head>
+<body id="page-top" class="landing-page no-skin-config">
+
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-expand-md" role="navigation">
+            <div class="container">
+
+                <div class="backToTop cursor-pointer">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+               
+                <div class="navbar-header page-scroll">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="nav navbar-nav navbar-right" >
+                        <!-- <li><a class="nav-link page-scroll" href="#page-top" onclick="showlogin()" style="color:maroon;">Login</a></li> -->
+                        <!-- <li><a class="nav-link page-scroll" href="#page-top" onclick="showlogin()"  style="color:maroon;">Login</a></li> -->
+                        <li><a class="nav-link page-scroll" href="#page-top" onclick="downloadFile()"  style="color:maroon;">Download App</a></li>
+                        <li><a class="nav-link page-scroll" href="#platform" style="color:maroon;">Platform</a></li>
+                        <li><a class="nav-link page-scroll" href="#contact" style="color:maroon;">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    
+              
+    <!-- Set background for slide in css -->
+    <div class="header-back one"></div>
+
+    <header class="section-title">
+        <h1>Guidelines</h1>
+    </header>
+    <section class="container guidelines">
+        <div class="guideline">
+            <img src="asset\css\inspinia\img\landing\sunog.jpg" width="100%" height="100%" alt="">
+        </div>
+        <div class="guideline">
+            <img src="asset\css\inspinia\img\landing\typhoon.jpg" width="100%" height="100%" alt="">
+        </div>
+        <div class="guideline">
+            <img src="asset\css\inspinia\img\landing\emergency.jpg" width="100%" height="100%" alt="">
+        </div>
+        <div class="guideline">
+            <img src="asset\css\inspinia\img\landing\emergencyKit.jpg" width="100%" height="100%" alt="">
+        </div>
+    </section>
+   
+
+    <section  class="container services" id="platform">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <!-- <h1>E-vacuate<br><br/> <span class="maroon"> Platforms</span> </h1> -->
+
+                <h1>E-vacuate<br></h1>
+                <div class="navy-line"></div>
+                <h1>Information</h1>
+                <div class="container infos">
+                    <div class="info">
+                        <img src="asset\css\inspinia\img\landing\info-1.jpg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="info">
+                        <img src="asset\css\inspinia\img\landing\info-2.jpg" width="100%" height="100%" alt="">
+                    </div>
+                </div>
+                <div class="navy-line"></div>
+                <h1>Platforms</h1>
+          
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 text-center wow fadeInLeft">
+                <div>
+                    <i class="fa fa-mobile features-icon"></i>
+                    <h2>E-vacuate SMS Hotlines</h2>
+                    <p>SMART: 0950 284 7497</p>
+                    <p>GLOBE: 0926 658 5705</p>
+                </div>
+                <div class="m-t-lg">
+                    <i class="fa fa-google features-icon"></i>
+                    <h2>E-vacuate Google Form</h2>
+                    <p><button type="button" class="btn btn-primary btn-xs" onclick="">Open form</button></p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center  wow zoomIn">
+                <img src="asset/css/inspinia/img/landing/perspective.png" alt="dashboard" class="img-fluid">
+            </div>
+            <div class="col-md-3 text-center wow fadeInRight">
+                <div>
+                    <i class="fa fa-envelope features-icon"></i>
+                    <h2>E-vacuate Official Email Address</h2>
+                    <p><a href="#">evacuate@gmail.com</a></p>
+                </div>
+                <div class="m-t-lg">
+                    <i class="fa fa-facebook-square features-icon"></i>
+                    <h2>Evacuate Hotline FB Page</h2>
+                    <p><a target="_blank" href="#">https://www.facebook.com/</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="gray-section contact">
+        <div class="container">
+            <div class="row m-b-lg">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+            <div class="row m-b-lg text-center justify-content-center">
+                <div class="col-lg-7 ">
+                    <address>
+                        <strong><span class="navy"></span></strong><br/>
+                        Caloocan City<br/>
+                        <abbr title="Phone">P:</abbr> 09502847497
+                    </address>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="#" class="btn btn-primary" onclick="contactSupport()">Contact Support</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center m-t-lg m-b-lg">
+                    <p><strong>&copy; 2022</strong><br/> E-vacuate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal inmodal" id="changepasswordModal" tabindex="-1" role="dialog"  aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content animated fadeIn">
+                <form class="m-t" role="form" id="frmChangepassword" method="POST" action="{{route('change')}}">
+                {{csrf_field()}}
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="ibox-content">
+                                    <h2 class="font-bold">Change password</h2>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="row" id="pwd-container2">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <label for="password">Password</label>
+                                                        <input type="password" class="form-control example2" name="chng_password" id="chng_password" placeholder="Password" autocomplete="off" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" placeholder="Confirm Password" name="chng_confirm_password" id="chng_confirm_password" autocomplete="off" required>
+                                                        <br>
+                                                        <span>The password must be at least 8 characters long, with at least one lower-case and one digit, and allows special characters like <code>@ * _ - . !</code></span>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label>Password Strength:</label>
+                                                        <div class="pwstrength_viewport_progress2"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <input type="hidden" name="chng_acct_no" id="chng_acct_no">
+                                            <button type="submit" class="btn btn-primary block full-width m-b">Save new password</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+    
+
+
+    <div class="modal inmodal" id="loginModal" tabindex="-1" role="dialog"  aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content animated fadeIn">
+                <!-- <form class="m-t" id="frmLogin" role="form"> -->
+                    
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <br>
+                        <br>
+                        <img src="asset/css/inspinia/img/logo v2.png" width=200px, height=150px class="rounded-circle circle-border">
+                        <h4 style="text-align:center" class="modal-title">Login</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form id="loginData">
+                                <div class="form-group">
+                                   
+
+                                    <input type="email" class="form-control" placeholder="Username" name="username" id="email" autofocus required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="0password" id="password"  placeholder="Password" autocomplete="off" required>
+                                </div>
+                                <br>
+
+                                <button id="signin" type="submit" class="btn btn-primary block full-width m-b">Login</button>
+                                </form>
+                                <!-- <p class="text-muted text-center">
+                                    <a href="#" data-toggle="modal" onclick="forgotpassword()">
+                                        Forgot password
+                                    </a>
+                                </p> -->
+
+                                <p class="text-muted text-center">
+                                    Don't have an account?
+                                    <a href="register.html">
+                                        Click Here
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal inmodal" id="forgotPassword" tabindex="-1" role="dialog"  aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content animated fadeIn">
+                <div class="modal-body">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <div class="ibox-content">
+
+                                <h2 class="font-bold">Forgot password</h2>
+
+                                <p>
+                                    Enter your Official Email Address 
+                                </p>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <form class="m-t" role="form" id="frmforgotpass">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name="useremail" id="useremail" required="" autocomplete="off">
+                                            </div>
+
+                                            <button type="submit" class="btn btn-primary  block full-width m-b">Send reset password email</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Mainly scripts -->
+    <script src="asset/css/inspinia/js/jquery-3.1.1.min.js"></script>
+    <script src="asset/css/inspinia/js/popper.min.js"></script>
+    <script src="asset/css/inspinia/js/bootstrap.js"></script>
+    <script src="asset/css/inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="asset/css/inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="asset/js/app.js" defer></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="asset/css/inspinia/js/inspinia.js"></script>
+    <script src="asset/css/inspinia/js/plugins/pace/pace.min.js"></script>
+    <script src="asset/css/inspinia/js/plugins/wow/wow.min.js"></script>
+
+    <script src="asset/css/inspinia/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="asset/css/inspinia/js/plugins/validate/additional-methods.js"></script>
+    <script src="asset/css/inspinia/js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="asset/css/inspinia/js/plugins/pwstrength/pwstrength-bootstrap.min.js"></script>
+    <script src="asset/css/inspinia/js/plugins/pwstrength/zxcvbn.js"></script>
+    <script src="asset/css/inspinia/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+    <script src="asset/css/inspinia/jquery-loading-overlay-2.1.6/loadingoverlay.min.js"></script>
+
+  
+
+
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('body').scrollspy({
+                target: '#navbar',
+                offset: 80
+            });
+
+            // Page scrolling feature
+            $('a.page-scroll').bind('click', function(event) {
+                var link = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(link.attr('href')).offset().top - 50
+                }, 500);
+                event.preventDefault();
+                $("#navbar").collapse('hide');
+            });
+
+            
+        });
+
+        var cbpAnimatedHeader = (function() {
+            var docElem = document.documentElement,
+                    header = document.querySelector( '.navbar-default' ),
+                    didScroll = false,
+                    changeHeaderOn = 200;
+            function init() {
+                window.addEventListener( 'scroll', function( event ) {
+                    if( !didScroll ) {
+                        didScroll = true;
+                        setTimeout( scrollPage, 250 );
+                    }
+                }, false );
+            }
+            function scrollPage() {
+                var sy = scrollY();
+                if ( sy >= changeHeaderOn ) {
+                    $(header).addClass('navbar-scroll')
+                }
+                else {
+                    $(header).removeClass('navbar-scroll')
+                }
+                didScroll = false;
+            }
+            function scrollY() {
+                return window.pageYOffset || docElem.scrollTop;
+            }
+            init();
+
+        })();
+
+        // Activate WOW.js plugin for animation on scrol
+        new WOW().init();
+
+      
+
+        function showlogin(){
+            $('#loginModal').modal();
+        }
+
+        function contactSupport(){
+            $('#sendreport_topic').val(2);
+            $('#contactSupportModal').modal();
+        }
+
+     
+
+        function loader(){
+            $.LoadingOverlay("show", {
+                image       : "",
+                fontawesome : "fa fa-spinner fa-spin",
+                size        : 10
+            });
+        }
+
+       
+
+       
+        $('#frmLogin').validate({
+            rules: {
+                username: {
+                    required: true,
+                },
+                password: {
+                    required: true,
+                }
+            },
+            submitHandler: function (form){
+                $.ajax({
+                    method: "POST",
+                    url: "{{route('login')}}",
+                    data: {username: $('#username').val(), password: $('#password').val(), _token: '{{csrf_token()}}'},
+                    dataType: 'json',
+                    success: function(myData){
+                        if(myData.error){
+                            swal({
+                                title: ' Login',
+                                text: myData.message,
+                                type: 'error',
+                                showCancelButton: false,
+                                confirmButtonColor: '#DD6B55',
+                                confirmButtonText: "OK",
+                                closeOnConfirm: true,
+                            });
+                        } else {
+                            if(myData.changepass){
+
+                                $('#loginModal').modal('hide');
+                                $('#chng_acct_no').val(myData.acct_no);
+
+                                $('#chng_password').focus();
+
+                                $('#changepasswordModal').modal();
+                            } else {
+                                if(myData.itofficer === true){
+                                    $('#loginModal').hide();
+
+                                    if(myData.units.length > 1){
+                                        $('#managed_unit').empty();
+                                        $('#managed_unit').append('<option value="" selected disabled></option>');
+                                        $.each(myData.units, function(key,value){
+                                            $('#managed_unit').append('<option value="'+value['managed_unit']+'">'+value['ref_unit']['OrderNumberPrefix']+'</option>');
+                                        });
+                                        $('#unitModalLanding').modal();
+                                    } else {
+                                       
+                                    }
+
+                                } else {
+                                  
+                                }
+                            }
+                        }
+                    },
+                   
+                });
+            }
+        });
+
+       
+       
+
+
+       
+
+        $.validator.addMethod("pwcheck", function(value) {
+            return /^[A-Za-z0-9\d=!\-@._*]*$/.test(value) // consists of only these
+               && /[a-z]/.test(value) // has a lowercase letter
+               && /\d/.test(value) // has a digit
+        }, "The password does not meet the minimum requirement." );
+
+        $.validator.addMethod('positiveNumber', function (value) {
+            return Number(value) > 0;
+        }, 'Enter a valid number.');
+
+
+        function downloadFile() {
+
+            Swal.fire({
+        title: 'You are about to download this application',
+        icon: 'info',
+        showCancelButton: true,
+        confirmButtonColor:'3085db',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Confirm',
+        reverseButtons: true
+
+    }).then((result)=>{
+        if (result.value){
+            fetch('asset/css/inspinia/img/app-debug.apk')
+    .then(function(response) {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.blob();
+    })
+    .then(function(blob) {
+      var url = window.URL.createObjectURL(blob);
+      var link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'e-vacuate');
+      document.body.appendChild(link);
+      link.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(link);
+    })
+    .catch(function(error) {
+      console.error('Error downloading file:', error);
+    });
+        }
+    })
+        
+ 
+}
+    </script>
+    <!-- <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAexoKQd7Mi6Of7cLSLAH7vq7Ymq2ILZPQ",
+            authDomain: "evacuateisad.firebaseapp.com",
+            databaseURL: "https://evacuateisad-default-rtdb.firebaseio.com",
+            projectId: "evacuateisad",
+            storageBucket: "evacuateisad.appspot.com",
+            messagingSenderId: "880708938906",
+            appId: "1:880708938906:web:be4eaf69a49e0b5d99c323",
+            measurementId: "G-EKMCWF5M2Z"
+        };
+
+        
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth();
+        const database = getDatabase(app);
+    
+        signin.addEventListener('click', (e) => {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+    
+        signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        
+    alert('success'+ user.key);
+    window.location.href ="dashboard.html";
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert('invalid username or password');
+      });
+    });
+
+    
+      </script> -->
+
+      <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.4/dist/sweetalert2.all.min.js"></script>
+
+      <script type="text/javascript" src="asset/js/login.js"></script>
+    
+    
+         
+
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-vacuate</title>
+
+    <link href="asset/css/inspinia/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="asset/css/inspinia/js/plugins/datapicker/bootstrap-datepicker1.js"></script>
+  
+   
+   
+    <!-- <link type="text/css" href="asset/css/inspinia/css/plugins/dataTables/jquery.dataTables.min.css" rel="stylesheet"> -->
+    <link typ="text/css" href="asset/css/inspinia/css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="asset/css/inspinia/css/plugins/datapicker/bootstrap-datepicker.css" >
+
+    <link rel="stylesheet" type="text/css" href="asset/css/inspinia/css/plugins/sweetalert/sweetalert.css" >
+
+    <link type="text/css" href="asset/css/inspinia/css/hidebutton.css">
+
+    <link href="asset/css/inspinia/css/animate.css" rel="stylesheet">
+    <link href="asset/css/inspinia/css/style.css" rel="stylesheet">
+
+</head>
+<!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+
+<body class="">
+
+    <div id="wrapper">
+
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" class="rounded-circle" src="asset/css/inspinia/img/avatar-icon-64pxwhite.png" />
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold">Admin</span>
+                                <!-- <span class="text-muted text-xs block">Option <b class="caret"></b></span> -->
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <!-- <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                                <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li> 
+                                <li class="dropdown-divider"></li> -->
+                                <li><a class="dropdown-item" href="admin.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            E
+                        </div>
+                    </li>
+                    <li ></i> <a href="subAddashboard.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a></li>
+                    <!-- <li></i> <a href="approval.html"><i class="fa fa-user-circle"></i> <span class="nav-label">Users</span></a></li> -->
+                    <li ></i> <a href="announcement.html"><i class="fa fa-newspaper-o"></i> <span class="nav-label">Advisory</span></a></li>
+                    <li></i> <a href="evacuationsite.html"><i class="fa fa-home"></i> <span class="nav-label">Evacuation Site</span></a></li>
+                    <li class="active" ></i> <a href="calamityhistory.html"><i class="fa fa-history"></i> <span class="nav-label">Previous Year History</span></a></li>
+
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <span class="show-large">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i
+                                class="fa fa-bars"></i> </a>
+                        </span>
+
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+
+
+                        <li>
+                            <a href="admin.html">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-sm-4">
+                    <h2>History</h2>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <p>E-vacuate</p>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <strong>History</strong>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+
+            
+            <br>
+            
+            <div class="ibox">
+
+                <div class="ibox-title">
+
+                   <div style="height:50px;">
+                    <span style=" display:flex; justify-content:flex-end; width:100%; padding:0; right: 40px; position:absolute; ">
+                        <button id="addButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" onclick="addData"><i style="width: 25px;" class="fa fa-plus-square"></i></button>
+                    </span>
+                   </div>
+                  </div>  
+
+            <div class="ibox-content">
+                
+               
+                
+                <div class="table-responsive">
+                <table id="myTable" class="table table-bordered" style="width:100%;">
+                    <!-- <table id="myTable" class="table table-bordered table-hover dataTables-example" style="width:100%;" > -->
+                    
+                    <thead>
+                        <tr >
+                            <!-- <th>#</th>
+                            <th style="display:none;">id</th>
+                            <th style="width: 5%;">City</th>
+                            <th style="width: 5%;">Calamity</th>
+                            <th style="width: 5%;">Date</th>
+                            <th style="width: 70%;">Description</th>
+                            <th style="width: 15%;text-align:center;">Action</th> -->
+
+                            <th>#</th>
+                            <th>id</th>
+                            <th style="width: 5%;">City</th>
+                            <th style="width: 5%;">Calamity</th>
+                            <th style="width: 5%;">Date</th>
+                            <th style="width: 70%;">Description</th>
+                            <th style="width: 15%;text-align:center;">Action</th> 
+
+                        </tr>
+
+                       
+                    </thead>
+                    
+                    <!-- <tbody id="tbody"> -->
+                        <tbody>
+
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            </div>
+
+
+              
+          <!-- add modal -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <label for="" class="modal-title fs-5" id="modalLabel">Add Data</label>
+                  <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle fa-2x"></i></button>
+                </div>
+
+              
+                <div class="modal-body">
+                    <form id="submitData">
+
+                <div class="mb-3">
+                    <label for="title1" class="form-label">City</label>
+                    <!-- <input type="text" class="form-control" id="cityC"/> -->
+                    <select name="cityad" class="form-control" id="addcity">
+                        <option value="Manila">Manila</option>
+                        <option value="Quezon City">Quezon City</option>
+                        <option value="Caloocan">Caloocan</option>
+                        <option value="Las Piñas">Las Piñas</option>
+                        <option value="Makati">Makati</option>
+                        <option value="Malabon">Malabon</option>
+                        <option value="Manduluyong">Mandaluyong</option>
+                        <option value="Marikina">Marikina</option>
+                        <option value="Muntinlupa">Muntinlupa</option>
+                        <option value="Navotas">Navotas</option>
+                        <option value="Parañaque">Parañaque</option>
+                        <option value="Pasay">Pasay</option>
+                        <option value="Pasig">Pasig</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="Taguig">Taguig</option>
+                        <option value="Valenzuela">Valenzuela</option>
+    
+                    </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="name1" class="form-label">Calamity</label>
+                        <select name="calamityad" class="form-control" id="addcalamity">
+                            <option value="Typhoon">Typhoon</option>
+                            <option value="Earthquake">Earthquake</option>
+                            <option value="Landslide">Landslide</option>
+                            <option value="Volcanic Eruption">Volcanic Eruption</option>
+                            <option value="Flood">Flood</option>
+        
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for ="date" class="form-label" >Date</label>
+                        <input type="text"  class="form-control" id="adddate" required>
+                    </div>
+    
+                   
+    
+                    <div class="mb-3">
+                    <label for="address1" class="form-label">Description</label>
+                    <textarea rows="5" class="form-control" cols="50" id="adddescription" style="width: 100%; max-width: 100%;" required></textarea>
+                    </div>
+
+                        <input type="hidden" id="aid"/>
+                
+
+           
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary" id="ewan" translate="1" >Save changes</button>
+                </div>
+
+                </form>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+
+          <!-- edit modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <label for="" class="modal-title fs-5" id="modalLabel">Update</label>
+                  <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle fa-2x"></i></button>
+                </div>
+
+              
+                <div class="modal-body">
+                    <form id="editData">
+
+                <div class="mb-3">
+                    <label for="title1" class="form-label">City</label>
+                    <!-- <input type="text" class="form-control" id="cityC"/> -->
+                    <select name="cityed" class="form-control" id="editcity">
+                        <option value="Manila">Manila</option>
+                        <option value="Quezon City">Quezon City</option>
+                        <option value="Caloocan">Caloocan</option>
+                        <option value="Las Piñas">Las Piñas</option>
+                        <option value="Makati">Makati</option>
+                        <option value="Malabon">Malabon</option>
+                        <option value="Manduluyong">Mandaluyong</option>
+                        <option value="Marikina">Marikina</option>
+                        <option value="Muntinlupa">Muntinlupa</option>
+                        <option value="Navotas">Navotas</option>
+                        <option value="Parañaque">Parañaque</option>
+                        <option value="Pasay">Pasay</option>
+                        <option value="Pasig">Pasig</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="Taguig">Taguig</option>
+                        <option value="Valenzuela">Valenzuela</option>
+    
+                    </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="name1" class="form-label">Calamity</label>
+                        <select name="calamityed" class="form-control" id="editcalamity">
+                            <option value="Typhoon">Typhoon</option>
+                            <option value="Earthquake">Earthquake</option>
+                            <option value="Landslide">Landslide</option>
+                            <option value="Volcanic Eruption">Volcanic Eruption</option>
+                            <option value="Flood">Flood</option>
+        
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for ="date" class="form-label" >Date</label>
+                        <input type="text"  class="form-control" id="editdate" required>
+                    </div>
+    
+                   
+    
+                    <div class="mb-3">
+                    <label for="address1" class="form-label">Description</label>
+                    <textarea rows="5" class="form-control" cols="50" id="editdescription" style="width: 100%; max-width: 100%;" required></textarea>
+                    </div>
+
+                        <input type="hidden" id="id"/>
+                
+
+           
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary" id="ewan" translate="1" >Save changes</button>
+                </div>
+
+                </form>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+
+          
+
+
+          <br>
+
+            <div class="footer">
+                <div>
+                    <strong>Copyright</strong> E-vacuate &copy; 2022
+                </div>
+            </div>
+
+        </div>
+       
+
+        
+        
+        
+    </div>
+
+    
+
+    <!-- Mainly scripts -->
+    <!-- <script src="css/inspinia/js/jquery-3.1.1.min.js"></script> -->
+    <script src="asset/css/inspinia/js/popper.min.js"></script>
+    <script src="asset/css/inspinia/js/bootstrap.js"></script>
+    <script src="asset/css/inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="asset/css/inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    
+    <script type="text/javascript" src="asset/css/inspinia/js/plugins/dataTables/dataTables.min.js"></script>
+
+    
+    <script type="text/javascript" src="asset/css/inspinia/js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.4/dist/sweetalert2.all.min.js"></script>
+    
+    <!-- Custom and plugin javascript -->
+    <script src="asset/css/inspinia/js/inspinia.js"></script>
+    <script src="asset/css/inspinia/js/plugins/pace/pace.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+   
+
+<!--     
+    <script>
+
+$(document).ready(function() {
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+
+    
+});
+
+      
+
+function toModal(title, description){
+    
+    modal = document.getElementById('modal')
+}
+
+        //view data
+    
+</script> -->
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+<script src="asset/js/history.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+    var edate="12/31/2022"; 
+$('#adddate').datepicker({
+'autoclose': 'true',     
+format: 'mm/dd/yyyy', 
+language: 'en', 
+startDate : new Date('01/01/2022'), 
+endDate : edate 
+}); 
+});
+</script>
+
+<script type="text/javascript">
+    $(function(){
+    var edate="12/31/2022"; 
+$('#editdate').datepicker({
+'autoclose': 'true',     
+format: 'mm/dd/yyyy', 
+language: 'en', 
+startDate : new Date('01/01/2022'), 
+endDate : edate 
+}); 
+});
+</script>
+
+</body>
+
+
+
+</html>

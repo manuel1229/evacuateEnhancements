@@ -1,0 +1,12 @@
+#map {
+    height: 300px;
+    width: 100%;
+}
+
+#map1 {
+    height: 300px;
+    width: 100%;
+}
+
+
+.pac-container { z-index: 100000 !important; }
