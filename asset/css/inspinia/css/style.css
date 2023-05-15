@@ -9861,25 +9861,29 @@ body.md-skin {
   height: 600px;
   width: 400px;
 }
-#back-to-top {
-  background-color: red;
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  padding: 1.3rem;
-  border: none;
-  border-radius: 50%;
-}
+
 .backToTop {
   display: none;
 }
-#back-to-top > svg{
-  transform: scale(2.6);
-  font-weight: 900;
-  color: white;
+
+.backToTop.visible {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  background-color: red;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  justify-content: center;
+  align-items: center;
 }
-.visible {
-  display: block;
+
+.backToTop > i {
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+  transform: translateY(-5%);
 }
 
 
